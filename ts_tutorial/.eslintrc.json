@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended", 
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint" 
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "project": "./tsconfig.json" 
+  },
+  "parser": "@typescript-eslint/parser", // ESLintにTypeScriptを理解させる
+  "env": { "browser": true, "es6": true },
+  "globals": {},
+  "rules": {}
+}
