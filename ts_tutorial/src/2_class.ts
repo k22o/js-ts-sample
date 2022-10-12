@@ -54,7 +54,7 @@ console.log(apple2);
 
 
 /*************************************************** */
-// interface
+// interface: tsのインターフェースは、変数もメソッドもOK。
 interface Person {
     readonly name: string;
     printProfile():void;    

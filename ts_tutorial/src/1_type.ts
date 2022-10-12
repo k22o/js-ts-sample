@@ -23,6 +23,11 @@ function printTuple(tpl: [string, number]) {
 printTuple(["abc", 1]);
 
 /*************************************************** */
+// any型：全ての型を許容する
+let anyObj: any = {content: 1};
+console.log(anyObj);
+
+/*************************************************** */
 // Objectの型指定 (あんまやらない)
 const obj: {
     name: string;
@@ -32,6 +37,12 @@ const obj: {
     tpl: ["abc", 1]
 }
 console.log(obj)
+
+/*************************************************** */
+// リテラル型 : 限られた値だけ許容
+let riteralSample: -1 | 0 | 1;
+riteralSample = 0;
+console.log(riteralSample);
 
 /*************************************************** */
 // Enum
@@ -78,7 +89,7 @@ printNumber(1, 2);
 printNumber(1);
 
 /*************************************************** */
-// typeを&で繋ぐ
+// type (型エイリアス) を&で繋ぐ (intersection型)
 
 type book1  = {
     title: string;
@@ -115,8 +126,8 @@ const longObj = {
 }
 console.log(longObj.content.genre);
 //console.log(longObj.content.genre?.test?)
-// こんなかんじで書けば、無い時点でnullを返してくれるらしい。
-// nullちぇっくがいらない
+// こんなかんじで書けば、無い時点でも実行時エラーにならない (Optional Chain)
+// nullやundefinedのチェックがいらない
 
 const str1 = null;
 const str2 = str1 ?? "default"; // nullやundefindの場合にdefault表示

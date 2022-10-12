@@ -1,4 +1,3 @@
-"use strict";
 function add(a, b) {
     return a + b;
 }
@@ -14,11 +13,16 @@ function printTuple(tpl) {
     console.log(tpl[0]);
 }
 printTuple(["abc", 1]);
+var anyObj = { content: 1 };
+console.log(anyObj);
 var obj = {
     name: "abc",
     tpl: ["abc", 1]
 };
 console.log(obj);
+var riteralSample;
+riteralSample = 0;
+console.log(riteralSample);
 var Janken;
 (function (Janken) {
     Janken[Janken["ROCK"] = 0] = "ROCK";

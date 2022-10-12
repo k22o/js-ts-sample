@@ -1,4 +1,3 @@
-"use strict";
 var Goods = (function () {
     function Goods(name, price) {
         this.genre = "";
