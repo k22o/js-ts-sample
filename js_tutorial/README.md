@@ -13,3 +13,6 @@
 ```
 - 一番外の`()`の代わりに`!`や`+`が用いられる
 - https://www.koikikukan.com/archives/2013/06/12-003333.php
+
+### HTTPリクエスト
+大きく分けて、`fetch` と `xmlHttpRequest` があるが、新しい方の`fetch`を使いましょう
