@@ -3,6 +3,7 @@ class Worker {
         this.age = age;
         this.name = name;
     }
+    
     disp() {
         console.log("age: " + this.age);
         console.log("name: " + this.name);
@@ -20,11 +21,43 @@ class Engineer extends Worker {
     }
 }
 
+class Worker2 {
+
+    // setter, getterが定義されている
+    // 普通にfunctionで書く場合も多い
+
+    get getAge() {
+        return this.age + " years old";
+    }
+
+    get getName() {
+        return this.name;
+    }
+
+    set setAge(age) {
+        this.age = age;        
+    }
+
+    set setName(name) {
+        this.name = "Mr/Ms." + name;        
+    }
+
+    disp() {
+        console.log("age: " + this.getAge);
+        console.log("name: " + this.getName);
+    }
+
+}
+
 
 let person1 = new Worker(20, "Yamada");
 person1.disp();
 let person2 = new Engineer(25, "Tanaka" ,"c++");
 person2.disp();
+let person3 = new Worker2();
+person3.setAge = 22;
+person3.setName = "Ito";
+person3.disp();
 
 // **************** prototype ***************** //
 
