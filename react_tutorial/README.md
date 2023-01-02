@@ -9,15 +9,16 @@ https://ja.reactjs.org/tutorial/tutorial.html
 
 ## インストール
 
-'''
+```
 npm install
-'''
+```
 
 ## 起動
 
 ```
 npm start 
 ```
+
 Open [http://localhost:3000](http://localhost:3000)
 
 
@@ -28,5 +29,3 @@ Open [http://localhost:3000](http://localhost:3000)
 - useEffect: レンダリングの後 (初回 + 更新後) に処理を待ち受ける
     - 似たもので、useLayoutEffectがある
 - useContext: コンポーネント間の値の渡し方を簡単にする (propsによる値渡しが複雑になる場合)
-
--------------------------------
