@@ -39,3 +39,23 @@ class ItemStorage<T> {
 const itemStorage: ItemStorage<number> = new ItemStorage();
 itemStorage.pushItem(3);
 itemStorage.printItem();
+
+
+
+/*************************************************** */
+// key-valueの定義
+type MyReadonly<T> = {
+    readonly [k in keyof T]: T[k]
+  }
+  
+  interface Todo {
+    title: string
+    description: string
+  }
+  
+  const todo: MyReadonly<Todo> = {
+    title: "Hey",
+    description: "foobar"
+  }
+
+/*************************************************** */
